@@ -9,7 +9,7 @@ function twoSum(nums: number[], target: number): number[] {
 
     if (numsMap.has(diff) && numsMap.get(diff) !== i) {
       console.log("has diff", numsMap.has(diff));
-      indices.push(i, numsMap.get(diff));
+      indices.push(i, numsMap.get(diff) as number);
       break;
     }
   }
